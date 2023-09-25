@@ -1,0 +1,21 @@
+pipeline
+   {
+      agent
+     {
+         label
+              {
+                label "ssh-slave2"	
+                 customeWorkspace "/home/ubuntu/jenkins_work"
+             }
+        }
+                stages{
+                    stage ("dir")
+                    {
+                     steps
+                      {
+                        echo "hello"
+                            sh "mkdir dev"
+                     }
+            }
+      }
+}
