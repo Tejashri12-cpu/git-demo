@@ -1,21 +1,23 @@
 pipeline
-   {
-      agent
-     {
-         label
-              {
-                label "ssh-slave2"	
-                 customeWorkspace "/home/ubuntu/jenkins_work"
-             }
-        }
-                stages{
-                    stage ("dir")
-                    {
-                     steps
-                      {
-                        echo "hello"
-                        sh "mkdir data"
-                     }
+{
+    agent any
+    stages
+    {
+        stage("hello")
+        {
+            steps
+            {
+                echo "hello aws"
+                echo "hello devops"
             }
-      }
+        }
+         stage("aws")
+        {
+            steps
+            {
+                echo "aws devops"
+                
+            }
+        }
+    }
 }
