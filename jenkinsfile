@@ -4,7 +4,7 @@ pipeline
      {
          label
               {
-                label "ssh-linux"	
+                label "ssh-slave2"	
                  customeWorkspace "/home/ubuntu/jenkins_work"
              }
         }
