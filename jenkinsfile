@@ -4,8 +4,8 @@ pipeline
      {
          label
               {
-                label "ssh-linux"	
-                 customeWorkspace "/home/ubuntu/jenkins_work"
+                label "ssh-slave2"	
+                 CustomeWorkspace "/home/ubuntu/jenkins_work"
              }
         }
                 stages{
@@ -14,7 +14,7 @@ pipeline
                      steps
                       {
                         echo "hello"
-                            sh "mkdir dev"
+                        sh "mkdir data"
                      }
             }
       }
